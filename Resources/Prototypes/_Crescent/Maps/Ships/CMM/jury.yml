@@ -1,0 +1,37 @@
+# Author Info
+# Discord: rubeebee
+
+- type: vessel
+  id: Jury
+  name: CMM Jury
+  description: |
+    A variant of the Abjudicator, made more affordable by removing the rocket rack and using and cheaper building materials.
+    LOADOUT: 2x Operator 20mm cannons
+    MINIMUM CREW: 1x Pilot 
+  price: 16000
+  category: Small
+  group: None
+  path: /Maps/_Crescent/Shuttles/CMM/jury.yml
+
+- type: gameMap
+  id: Jury
+  mapName: 'CMM Jury'
+  mapPath: /Maps/_Crescent/Shuttles/CMM/jury.yml
+  minPlayers: 0
+  stations:
+    Jury:
+      stationProto: StandardCrescentExpeditionVessel
+      components:
+        - type: VesselIcon
+          iffIcon:
+            sprite: _Crescent/ShipIcons/ifficons.rsi
+            state: corvette
+        - type: StationNameSetup
+          mapNameTemplate: 'CMM Jury {1}'
+          nameGenerator:
+           !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: VesselDesignation
+          designation: vessel-designation-gunship
+        - type: VesselDescription
+          description: With an underfunded militia, giles santos has to make do.

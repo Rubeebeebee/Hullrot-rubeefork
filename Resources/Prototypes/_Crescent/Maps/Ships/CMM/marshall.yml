@@ -1,0 +1,37 @@
+# Author Info
+# Discord: rubeebee
+
+- type: vessel
+  id: Marshall
+  name: CMM Marshall
+  description: |
+    A variant of the Provost, made more affordable by retrofitting it to be a ballistic brawler and using and cheaper building materials.
+    LOADOUT: 2x 90mm Automortars, 1x 180mm Magwell, 2x 20x135 PDT
+    MINIMUM CREW: 1x Pilot, 1x Gunner/Loader 
+  price: 34000
+  category: Small
+  group: None
+  path: /Maps/_Crescent/Shuttles/CMM/marshall.yml
+
+- type: gameMap
+  id: Marshall
+  mapName: 'CMM Marshall'
+  mapPath: /Maps/_Crescent/Shuttles/CMM/marshall.yml
+  minPlayers: 0
+  stations:
+    Marshall:
+      stationProto: StandardCrescentExpeditionVessel
+      components:
+        - type: VesselIcon
+          iffIcon:
+            sprite: _Crescent/ShipIcons/ifficons.rsi
+            state: corvette
+        - type: StationNameSetup
+          mapNameTemplate: 'CMM Marshall {1}'
+          nameGenerator:
+           !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: VesselDesignation
+          designation: vessel-designation-gunship
+        - type: VesselDescription
+          description: A very crammped and overridden gunship. Make those lawbreakers pay.

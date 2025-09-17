@@ -153,6 +153,8 @@
     shuttles:
     - Provost
     - Adjudicator
+    - Jury
+    - Marshall
 
 - type: entity
   id: RefugeMothershipComputer
