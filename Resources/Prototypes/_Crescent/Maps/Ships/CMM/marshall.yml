@@ -3,7 +3,7 @@
 
 - type: vessel
   id: Marshall
-  name: CMM Marshall
+  name: Marshall
   description: |
     A variant of the Provost, made more affordable by retrofitting it to be a ballistic brawler and using and cheaper building materials.
     LOADOUT: 2x 90mm Automortars, 1x 180mm Magwell, 2x 20x135 PDT
@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: Marshall
-  mapName: 'CMM Marshall'
+  mapName: 'Marshall'
   mapPath: /Maps/_Crescent/Shuttles/CMM/marshall.yml
   minPlayers: 0
   stations:
@@ -27,7 +27,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'CMM Marshall {1}'
+          mapNameTemplate: 'Marshall {1}'
           nameGenerator:
            !type:NanotrasenNameGenerator
             prefixCreator: '14'

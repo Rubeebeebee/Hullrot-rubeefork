@@ -3,7 +3,7 @@
 
 - type: vessel
   id: Jury
-  name: CMM Jury
+  name: Jury
   description: |
     A variant of the Abjudicator, made more affordable by removing the rocket rack and using and cheaper building materials.
     LOADOUT: 2x Operator 20mm cannons
@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: Jury
-  mapName: 'CMM Jury'
+  mapName: 'Jury'
   mapPath: /Maps/_Crescent/Shuttles/CMM/jury.yml
   minPlayers: 0
   stations:
@@ -27,7 +27,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'CMM Jury {1}'
+          mapNameTemplate: 'Jury {1}'
           nameGenerator:
            !type:NanotrasenNameGenerator
             prefixCreator: '14'
