@@ -1,0 +1,37 @@
+# Author Info
+# Discord: rubeebee
+
+- type: vessel
+  id: Brick
+  name: SHI Brick
+  description: |
+    SHI's answer to ICM's Termite, the Brick is an retrofitted cargo module that SHI attached thrusters to become a small scale salvage vessel. Has two plasmacasters in order to blast derelicts apart for their scrap. 
+    LOADOUT: 2x Civilian-grade Plasmacasters
+    MINIMUM CREW: 1x Pilot
+  price: 34000
+  category: Small
+  group: Civilian
+  path: /Maps/_Crescent/Shuttles/Civilian/brick.yml
+
+- type: gameMap
+  id: Brick
+  mapName: 'SHI Brick'
+  mapPath: /Maps/_Crescent/Shuttles/Civilian/brick.yml
+  minPlayers: 0
+  stations:
+    Brick:
+      stationProto: StandardCrescentExpeditionVessel
+      components:
+        - type: VesselIcon
+          iffIcon:
+            sprite: _Crescent/ShipIcons/ifficons.rsi
+            state: industrial
+        - type: StationNameSetup
+          mapNameTemplate: 'SHI Brick {1}'
+          nameGenerator:
+           !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: VesselDesignation
+          designation: vessel-designation-salvage
+        - type: VesselDescription
+          description: A flying cargo container. Contains the hopes and dreams of salarypeople sector wide.
